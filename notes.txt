@@ -1,0 +1,72 @@
+# Notes for starter project.
+
+List of stuff to do to use this starter project
+This list is following along the video.  I might reorganize this later.
+
+1) install npm
+
+2) install the packages from package.json
+    -> npm install
+
+3) Security is built into npm from node security platform
+    -> npm audit
+        to check for problems with packages
+    -> npm audit fix
+        have npm try to automatically fix them
+
+    notes: use opn rather then open because it fixes the critical risk npm complains about.
+
+4) create a simple express server in the buildScripts folder.
+    very simple server that just serves the index.html on port 3000.
+
+5) create a index.html that has a html file
+  just has a skeleton for title hello world
+
+5) showing work in progress to others.
+    one way is to use localtunnel
+    -> npm install localtunnel -g
+    then start the server locally on desired port ie 3000
+
+    open another terminal window with the + command to the top right of the vs code window.
+    -> lt --port 3000
+    this will expose port 3000 through the firewall.
+    no security.  the world will see this url.
+
+    other options will be ngrok but it will need more setup.
+    --look into this ngrok later.
+
+6) Automation,
+  options,
+    Grunt, the original, large
+
+    Gulp, in memory, fast, code over configeration, large plugin ecosystem
+
+    npm scripts
+      declared direcly in package.json from script tags
+      leverage your OS' comannand line
+      directly use npm packages
+      call separtate Node scripts if one gets too complicated
+      convention-based pre/post hooks
+      leverage npm
+      easier to debug a problems with plugin dependency because the npm scripts calls the npm depenceys directly.
+
+7) npm scripts
+  editing the scripts {} in package.json
+
+  add a start script.
+
+  "start": "node buildScripts/srcServer.js"
+
+  note you donot need a to type in run for start or test scripts because npm has a short cut,
+  for all other script you will need to -> npm run scriptname
+
+8) adding pre and post to scripts
+  npm will run any script with a pre before the script like "prestart" if start is called
+    same for post will call after script
+
+9) npm run all
+  look at scripts for uses of "npm run all"
+
+esw is the excecutable for esLint watch.
+used when making a watcher for eslint.
+-> note i have a plug in on vscode to automatically lint with feed back called EsLint in the plugins folder.
