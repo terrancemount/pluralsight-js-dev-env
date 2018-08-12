@@ -70,3 +70,28 @@ This list is following along the video.  I might reorganize this later.
 esw is the excecutable for esLint watch.
 used when making a watcher for eslint.
 -> note i have a plug in on vscode to automatically lint with feed back called EsLint in the plugins folder.
+
+
+automated testing
+  Mocah is used in this example
+
+  Need to load in Assertion Libraries.
+
+  Going to use Chai as an assersion library.
+
+  Questions.
+
+  JSDOM simulates a browser, useful to speed up the testing without a brower.
+    fast and doesn't run full browser.
+
+  Headless browser
+    runs like a full browser without no interface.
+
+  where to put the test file, Cory suggests along side.
+  naming   filename.test.js
+
+  Should run a unit test every time you hit save.
+
+  unit tests
+    are small and often run every time we hit save.
+    if test is taking too long then it doesn't
