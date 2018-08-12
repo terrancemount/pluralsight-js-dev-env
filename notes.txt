@@ -95,3 +95,9 @@ automated testing
   unit tests
     are small and often run every time we hit save.
     if test is taking too long then it doesn't
+
+
+CI testing with Travis CI.  Forgot a space bewteen the dash and the number and it failed to load
+node.  -"6" instead of - "6".  Just so you know.
+
+I like using travis CI because it checks for testing on linux.
